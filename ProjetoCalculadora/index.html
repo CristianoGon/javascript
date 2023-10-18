@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora On </title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <div id="resul"></div>
+        <input id="nb1" placeholder="Número 01"/>
+        <input id="nb2" placeholder="Número 02">
+    <button onclick="somar ()">+</button>
+    <button onclick="dividir ()">/</button>
+    <button onclick="subtrair ()">-</button>
+    <button onclick="multiplicar ()">*</button>
+    <button onclick="resetar()">Resetar</button>
+    
+
+
+
+    <script>
+
+      
+
+
+        function somar (){
+
+
+
+            var nbb1 = parseFloat(document.getElementById('nb1').value);
+            var nbb2 = parseFloat(document.getElementById('nb2').value);
+            var Resultado = document.getElementById('resul');
+
+            var valor =  nbb1 + nbb2;
+      
+            Resultado.textContent= valor;
+       
+       
+       
+        }
+
+        function dividir(){
+
+
+            var nbb1 = parseFloat(document.getElementById('nb1').value);
+            var nbb2 = parseFloat(document.getElementById('nb2').value);
+            var Resultado = document.getElementById('resul');
+
+            var valor =  nbb1 / nbb2;
+      
+            Resultado.textContent= valor;
+
+
+
+
+
+
+        }
+
+
+
+
+        function subtrair (){
+
+
+
+
+
+            var nbb1 = parseFloat(document.getElementById('nb1').value);
+            var nbb2 = parseFloat(document.getElementById('nb2').value);
+            var Resultado = document.getElementById('resul');
+
+            var valor =  nbb1 - nbb2;
+      
+            Resultado.textContent= valor;
+
+
+        }
+
+
+        function multiplicar (){
+
+
+
+            var nbb1 = parseFloat(document.getElementById('nb1').value);
+            var nbb2 = parseFloat(document.getElementById('nb2').value);
+            var Resultado = document.getElementById('resul');
+
+            var valor =  nbb1 * nbb2;
+      
+            Resultado.textContent= valor;
+
+
+
+
+        }
+      
+        function resetar() {
+
+          
+           zerar1 = document.getElementById('nb1');
+           zerarr = document.getElementById('nb2');
+           Resultadooc= document.getElementById('resul')
+
+           zerar1.value = ' ';
+           zerarr.value = ' ';
+           Resultadooc.innerHTML = ' '; 
+            
+        }
+  
+
+        function resetar() {
+    var nb1 = document.getElementById('nb1');
+    var nb2 = document.getElementById('nb2');
+    var Resultadooc = document.getElementById('resul');
+
+    nb1.value = '';
+    nb2.value = '';
+    Resultadooc.innerHTML = '';
+
+    // Restaurar os placeholders
+    nb1.placeholder = 'Número 01';
+    nb2.placeholder = 'Número 02';
+  }
+
+
+
+    </script>
+    
+</body>
+</html>
